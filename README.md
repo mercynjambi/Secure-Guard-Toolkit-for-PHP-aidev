@@ -42,7 +42,7 @@ Browser: Chrome or Edge.
 
 ## 4. Installation & Setup Instructions
 ## Step 1: Install XAMPP
-Download the installer from apachefriends.org.
+Download the installer from ```http://apachefriends.org.```
 
 Windows Alert:
 You may see a "UAC Warning." Click OK and ensure you install to ```C:\xampp``` (not ```C:\Program Files```) to avoid permission errors.
@@ -74,7 +74,7 @@ XAMPP installs the PHP executable in:
 ``` C:\xampp\php```
 
 A. Test using the full path:
-```PowerShell C:\xampp\php\php.exe -v```
+```PowerShell                                          C:\xampp\php\php.exe -v```
 
 
 If this works → PHP is installed, but your system PATH is missing.
@@ -120,7 +120,8 @@ With the environment verified, you can now scaffold your toolkit.
 ## Project Structure
 Your repository should now be organized as follows:
 
-```secure_guard/
+```
+secure_guard/
 │
 ├── .git/               
 ├── index.php           
