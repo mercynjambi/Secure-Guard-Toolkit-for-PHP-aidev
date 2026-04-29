@@ -62,7 +62,11 @@ Success Check: The "Apache" module text must turn Green, and you should see Port
 ## 2. Verify PHP is Active
 Open your terminal (Command Prompt or PowerShell) and run:
 
-```Bash php --version```
+```
+Bash 
+php --version
+
+```
 
 If you see "php is not recognized," follow the Windows Troubleshooting below to fix your PATH.
 
@@ -74,7 +78,11 @@ XAMPP installs the PHP executable in:
 ``` C:\xampp\php```
 
 A. Test using the full path:
-```PowerShell                                          C:\xampp\php\php.exe -v```
+```
+PowerShell 
+C:\xampp\php\php.exe -v
+
+```
 
 
 If this works → PHP is installed, but your system PATH is missing.
@@ -87,10 +95,15 @@ Click Environment Variables (bottom right).
 Under System variables, find and select Path, then click Edit.
 
 ## Click New and add:
-``` C:\xampp\php```
+```
+ C:\xampp\php
+ 
+ ```
 
 ## Click OK on all windows, reopen terminal, and run:
-``` php --version.```
+``` 
+php --version
+```
 
 ## macOS / Linux Troubleshooting
 A. Fix PATH for ```Zsh``` (macOS Default):
@@ -105,17 +118,25 @@ Then reload:
 With the environment verified, you can now scaffold your toolkit. 
 
 ## 1. Navigate to the Web Root:
-```Bash```
-```cd C:\xampp\htdocs```
+```
+Bash
+
+cd C:\xampp\htdocs
+
+```
 
 ## 2. Create the Project Directory:
-```Bash```
-```mkdir secure_guard```
-```cd secure_guard```
+```Bash
+mkdir secure_guard 
+cd secure_guard
+
+```
 
 ## 3. Initialize Version Control:
-```Bash```
-```git init```
+```Bash
+git init
+
+```
 
 ## Project Structure
 Your repository should now be organized as follows:
