@@ -200,10 +200,11 @@ Successful Evaluation: A password like ```123``` should return a "Weak" status, 
 This phase focuses on shifting the mental model from static frontend design to dynamic server-side logic
 
 #### Prompt 1: 
-I am a frontend developer learning PHP for backend security. Explain the PHP request-response cycle and why PHP is considered 'server-side' compared to JavaScript. Specifically, explain why I cannot run a .php file by double-clicking it and how a local server like Apache acts as a translator. Provide 3 reflection questions on how this architecture improves application security.
+I am a Fullstack Developer specializing in React and Flask. I am evaluating PHP to understand its legacy and modern implementation in server-side security. Compare the PHP Request-Response cycle to the Flask/Python execution model, specifically regarding how PHP handles 'Shared-Nothing' architecture versus Flask’s long-running processes. Explain why, unlike a React build folder which can be served statically, a .php file requires a pre-processor like Apache with mod_php. Finally, provide 3 high-level reflection questions on how PHP’s 'execution-per-request' model inherently mitigates certain types of memory-based security vulnerabilities common in other backend languages.
 
 #### AI Helpfulness 
-The AI explained that the PHP request-response cycle is a back-and-forth communication where the browser (Client) requests a page, and the Server (Apache) executes the PHP code before sending back pure HTML. It clarified that unlike JavaScript, which the browser can read directly, PHP is "invisible" to the user and requires a server-side pre-processor to function. This architecture improves security because the raw logic and database credentials never leave the server, preventing users from seeing or tampering with the backend code.
+The AI provided a high-level technical comparison, noting that while Flask typically runs as a persistent process (WSGI), PHP follows a 'Shared-Nothing' architecture where every request starts from a completely clean state. Unlike React, which compiles into static assets that a browser can interpret, PHP is a script that must be parsed by a server-side engine (like Apache or Nginx via FPM) before any HTML is generated. This "translator" role is critical because the browser has no native engine to execute PHP logic. The session concluded with a deep dive into security, explaining how PHP's model prevents "cross-request" memory leakage, as the entire execution environment is destroyed once the response is sent.
+
 
 
 
